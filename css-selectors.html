@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Hello World In HTML</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>CSS Selectors</h1>
+				</section>
+
+        <section>
+          <h1>What if I told you...</h1>
+          <h2>We've been doing CSS completely wrong?!?</h2>
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/L8EerQPJ3fo" frameborder="0" allowfullscreen autoplay></iframe>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Something to note...
+
+            Often, you will find multiple ways and opinions about how to approach coding problems.
+
+            **To determine what's a smart approach:**
+
+            * use your judgement - getting the job done comes first
+            * take a deeper dive in your online research
+            * ask a mentor
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            # Inline Styles are...
+
+            * Hard to maintain
+            * Confuse style with semantics
+            * Do not allow us to generalize common UI
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            # What if...
+
+            * We could isolate our styling in a separate section of our HTML?
+            * We could apply styling consistently to multiple elements, in one place?
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            # CSS Selectors
+            ## The Hero We Need
+
+            <img src="/img/funny-batman.jpg" height="400" alt="Funny Hero"/>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Element Based Selection and Syntax
+
+            <pre>
+              <code>
+                <style>
+                  p {
+                    color: blue;
+                  }
+                </style>
+              </code>
+            </pre>
+
+            [CodePen](http://codepen.io/dpickett/pen/WoNmdE?editors=1000)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            # Style elements...
+
+            * Belong inside the `<head>` element
+            * Centralize styling rules
+            * Must contain only valid CSS syntax
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## What about applying rules to one element?
+
+            Use an **ID** based selector
+
+            <pre>
+              <code>
+                #urgent-message {
+                  color: red;
+                  font-weight: bold;
+                }
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                <p id="urgent-message">
+                  This is an urgent message
+                </p>
+
+                <p>
+                  Implemented styling will not apply here
+                </p>
+              </code>
+            </pre>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## HTML ID's...
+
+            * must be unique to the page
+            * are the most efficient selectors
+            * take priority over other CSS selectors
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            <pre>
+              <code>
+                #urgent-message {
+                  color: red;
+                  font-weight: bold;
+                }
+
+                p {
+                  color: blue;
+                }
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                <p id="urgent-message">An urgent message</p>
+                <p>Another paragraph</p>
+              </code>
+            </pre>
+
+            [CodePen](http://codepen.io/dpickett/pen/aBbMKx?editors=1000)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Selectors have weight
+
+            * ID based selectors are most specific
+            * Element based selectors are least specific
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## So we know how to...
+
+            * Isolate one element on the page
+            * Apply rules to every element of the same type on the page
+
+            **But** How do we apply rules to multiple, but not _all_ elements of the same type?
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Class Based Selectors
+
+            <pre>
+              <code>
+                .urgent-message {
+                  color: red;
+                  font-weight: bold;
+                }
+              </code>
+            </pre>
+
+            <pre>
+              <code>
+                <p class="urgent-message">One urgent message</p>
+
+                <p>Something regular</p>
+
+                <p class="urgent-message">Another urgent thing</p>
+              </code>
+            </pre>
+
+            [CodePen](http://codepen.io/dpickett/pen/oYNVmX)
+          </script>
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
