@@ -1,0 +1,67 @@
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+// Primary Base Colors
+// ----------------
+$la-white: #f8f8f9;
+$la-light-grey: #eeeeee;
+$la-navy: #1c2224;
+
+// Primary Accent Colors
+// ----------------
+$la-blue: #37becc;
+$la-pink: #ed1a7b;
+$la-light-green: #84ce15;
+
+// Misc Base Colors
+// ----------------
+$la-grey: #CCCCCC;
+$la-med-dark-grey: #999999;
+$la-dark-grey: #777777;
+$la-border-color: #DDDDDD;
+
+// Misc Accent Colors
+// ----------------
+$la-light-blue: #E5F3F4;
+$la-light-pink: #FF7DD6;
+$la-green: #00aa00;
+$la-red: #D3080C;
+$la-dark-yellow: #FFD800;
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: $la-white;
+
+$mainColor: $la-dark-grey;
+$headingColor: $la-blue;
+
+$mainFontSize: 38px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: $la-blue;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
