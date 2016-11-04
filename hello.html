@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Hello World In HTML</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>What is HTML?</h1>
+				</section>
+				<section data-markdown>
+			    <script type="text/template">
+            **H**yper **T**ext **M**arkup **L**anguage
+					</script>
+				</section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Our First Codepen
+
+            [Hello World In HTML](http://codepen.io/dpickett/pen/VmwgrG?editors=1000)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## HTML is...
+
+            * The code that drives websites
+            * A structured way of defining the structure of a document
+            * A nested and standardized system of <strong>elements</strong>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## HTML Elements
+
+            <pre>
+              <code>
+                <p>A paragraph of text</p>
+              </code>
+            </pre>
+
+            * Define the structure of your document
+            * Each element has <strong>semantic</strong> meaning
+            * Typically have a start and an end tag
+            * Some special elements self-close
+          </script>
+        </section>
+        <section data-markdown>
+          [Codepen](http://codepen.io/dpickett/pen/zoYemp?editors=1000)
+          <script type="text/template">
+            <pre>
+              <code>
+                <p>
+                  A paragraph with a<br />
+                  break inside it
+                </p>
+              </code>
+          </script>
+        </section>
+        <section data-markdown>
+          [CodePen](http://codepen.io/dpickett/pen/bBGzjd?editors=1000)
+          <script type="text/template">
+            <pre>
+              <code>
+                <h1>The Most Important Text on a Webpage</h1>
+              </code>
+            </pre>
+            <pre>
+              <code>
+                <p>A paragraph with a <a href="https://google.com">Link</a></p>
+              </code>
+            </pre>
+            <pre>
+              <code>
+                <ul>
+                  <li>A</li>
+                  <li>Bulleted</li>
+                  <li>List</li>
+                </ul>
+              </code>
+            </pre>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Elements
+
+            * Contain text
+            * Contain other elements
+            * Have rules defined by the W3C (more on that, later)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The Way to Learn HTML is to...
+
+            * Build with it
+            * Read and obey the rules that are defined by the W3C
+            * **View Source**
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Using "View Source" and Chrome Inspector
+
+            _Don't worry if you don't have chrome installed yet. You will_
+          </script>
+        </section>
+        <section data-markdown>
+          # Now you...
+
+          Create a codepen about your subject matter of interested.
+
+          Use:
+
+          * One `<h1>` tag
+          * At least one unordered list with a combination of `<ul>` and `<li>`
+          * At least one `<p>` element
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
