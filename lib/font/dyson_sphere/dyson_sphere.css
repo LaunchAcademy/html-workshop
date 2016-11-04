@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'QuatroSlab';
+    src: url('QuatroSlab_Regular.eot');
+    src: url('QuatroSlab_Regular.eot?#iefix') format('embedded-opentype'),
+         url('QuatroSlab_Regular.woff') format('woff'),
+         url('QuatroSlab_Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}

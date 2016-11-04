@@ -4,7 +4,7 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url(../../lib/font/dyson_sphere/dyson_sphere.css);
 
 // Primary Base Colors
 // ----------------
@@ -41,7 +41,7 @@ $headingColor: $la-blue;
 
 $mainFontSize: 38px;
 $mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'QuatroSlab', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: uppercase;
@@ -65,3 +65,16 @@ section.has-dark-background {
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+	h1, h2, h3, h4, h5, h6 {
+		text-transform: none;
+	}
+}
+.reveal h2 {
+	color: $la-pink;
+}
+
+.reveal section img {
+	border: none;
+}
