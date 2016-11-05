@@ -1,0 +1,252 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to CSS</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>What is CSS?</h1>
+				</section>
+        <section>
+  				<section data-markdown>
+  			    <script type="text/template">
+              **C**ascading **S**tyle **S**heets
+  					</script>
+  				</section>
+          <section data-markdown>
+            <script type="text/template">
+              Turn your HTML document into a
+
+              ## Work of Art!
+
+              With one simple attribute...
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### The **Style** Attribute
+
+              `<p style=YOUR STYLE HERE></p>`
+            </script>
+          </section>
+        </section>
+        <section>
+  				<section data-markdown>
+  			    <script type="text/template">
+              ## **S**tyle: **C**olor
+  					</script>
+  				</section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p>Hello World<p>`
+
+              <p>Hello World<p>
+
+              without style
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p style="color: red">Hello World<p>`
+
+              <p style="color: red">Hello World<p>
+
+              with style
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p style="background-color: red">Hello World<p>`
+
+              <p style="background-color: red">Hello World<p>
+
+              with background color
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Hex Color Codes
+
+              `<p style="color: #0A0">Hello World</p>`
+
+              <p style="color: #0A0">Hello World</p>
+
+              3 Digit Hexadecimal RGB Values
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p style="color: #0000AA">Hello World</p>`
+
+              <p style="color: #0000AA">Hello World</p>
+
+              6 Digit Hexadecimal RGB Values. Gotta try them all!
+
+              A quick demo of dropper chrome extension..
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## **S**tyle: **F**ont **S**tyles
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Font Size
+
+              `<p style="font-size: 50px">Hello World<p>`
+
+              <p style="font-size: 50px">Hello World<p>
+
+              Change the font size with pixels!
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p style="font-size: 24pt">Hello World<p>`
+
+              <p style="font-size: 24pt">Hello World<p>
+
+              Change the font size with print size!
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              `<p style="font-size: 2em">Hello World<p>`
+              `<p style="font-size: 2rem">Hello World<p>`
+
+              <p style="font-size: 2rem">Hello World<p>
+
+              Change the font size with the current font size!
+
+              Default is 16px for browsers.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Font Style
+
+              `<p style="font-style: italic">Hello World<p>`
+
+              <p style="font-style: italic">Hello World<p>
+
+              Italic, Normal, Oblique
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Font Weight
+
+              `<p style="font-weight: bold">Hello World<p>`
+              `<p style="font-weight: 400">Hello World<p>`
+
+              <p style="font-weight: bold">Hello World<p>
+
+              Bold, Bolder, Lighter
+
+              Can also use intervals of 100 for varying weights.
+            </script>
+          </section>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## **S**tyle: **O**ther **T**echniques
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Text Alignment
+
+              `<p style="text-align: right">Hello World<p>`
+
+              <p style="text-align: right">Hello World<p>
+
+              Left, Center, Right
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Line Height
+
+              `<p style="line-height: 200%">Hello<p>`
+
+              `<p style="line-height: 200%">World<p>`
+
+              <p style="line-height: 200%">Hello<p>
+              <p style="line-height: 200%">World<p>
+
+              Standard is 110-120% on most browsers.
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              ### Font
+
+              `<p style="font-family: Arial, Helvetica, sans-serif">Hello World<p>`
+
+              <p style="font-family: Times New Roman, Times, serif">serif<p>
+
+              vs
+
+              <p style="font-family: Arial, Helvetica, sans-serif">sans-serif<p>
+            </script>
+          </section>
+        </section>
+        <section data-markdown>
+          # Now you...
+
+          Add some cool style to your bio page!
+
+          Use a combination of:
+
+          * Color
+          * Background Color
+          * Font (size, style, weight)
+          * Text Align
+          * Line Height
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
