@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<img src="/img/Launch_Academy_Logo.png"
+						alt="Launch Academy Logo"
+						width="400"/>
+					<h1>Intro to HTML</h1>
+					<h2>Launch Academy</h2>
+				</section>
+				<section data-markdown>
+			    <script type="text/template">
+						<img src="/img/dan.png"
+							alt="Dan Pickett" height="200" />
+						# Hi! I'm Dan
+
+						* Co-Founder at Launch Academy
+						* Programming professionally for 17 years
+						* Lover of meeting energetic, aspiring programmers
+					</script>
+				</section>
+				<section data-markdown>
+			    <script type="text/template">
+						<img src="/img/sebastian.jpg"
+							alt="Sebastian Kopp" height="200" />
+						# Sebastian is here!
+
+						* Experience Engineer at Launch Academy
+						* Part of the Philadelphia Team
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						<img src="/img/Launch_Academy_Logo.png" alt="Launch Academy"
+							height="200" />
+						## Launch Academy is...
+
+						* An intensive learning program that teaches developers
+						* Offers courses Online and On Campus in Boston and Philadelphia
+						* Excited to become part of the Philly community
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Some "Ground Rules"
+
+						* There's no such thing as a "stupid question"
+						* Interrupt us when things are unclear!
+						* Together, let's foster a welcoming and positive learning environment
+						* Own your experience
+						* Help each other out - learning is a social sport
+						* Have some fun
+					</script>
+				</section>
+				<section data-markdown>
+						<script type="text/template">
+							## The Launch Academy Way, Workshop Edition
+
+							1. **25-30 minutes** of interactive facilitations - follow along
+							1. **15 minutes** of putting new knowledge to work - learn by doing
+							1. **5 minutes** of peer review - learn by viewing source
+							1. Rinse, Repeat
+						</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Today's Plan - Part I
+
+						1. Introduction
+						1. Hello World in HTML w/ Dan
+						1. Getting Set Up and Professional Web Development Workflow w/ Sebastian
+						1. Standards and W3C Validation w/ Dan
+						1. Break
+					</script>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Today's Plan - Part II
+
+						1. Introduction to CSS w/ Sebastian
+						1. CSS Selectors w/ Dan
+						1. Site Demos and Markup Code Reviews
+					</script>
+				</section>
+				<section data-markdown>
+						## Now You...
+
+						Introduce yourself to your pair
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
