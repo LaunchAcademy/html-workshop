@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Getting Set Up with a Professional Web Development Workflow</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Getting Set Up with a Professional Web Development Workflow</h1>
+				</section>
+				<section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Installation
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              [Download Atom](https://atom.io/)
+
+              A text editor for code
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              [Download Google Chrome](https://www.google.com/chrome/browser/desktop/index.html)
+
+              Why Chrome?
+            </script>
+          </section>
+          <section data-markdown>
+            <script type="text/template">
+              Because I said so.
+            </script>
+          </section>
+        </section>
+				</section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The Professional Web Development Workflow
+
+            [Hello World In HTML](http://codepen.io/dpickett/pen/VmwgrG?editors=1000)
+          </script>
+        </section>
+        <section>
+          <section data-markdown>
+            <script type="text/template">
+              ## Hello World...but locally!
+
+              [Hello World In HTML](http://codepen.io/dpickett/pen/VmwgrG?editors=1000)
+            </script>
+          </section>
+          <section data-markdown>
+						<script type="text/template">
+							## A quick demonstration in Atom
+						</script>
+          </section>
+        </section>
+				<section>
+          <section data-markdown>
+            <script type="text/template">
+              ## A quick breakdown
+            </script>
+          </section>
+          <section data-markdown>
+						<script type="text/template">
+							The <!DOCTYPE html> tag tells the browser what type of document it will receive
+						</script>
+          </section>
+					<section data-markdown>
+						<script type="text/template">
+							The `<head>` tag, or the "header", is where information about the document is located
+						</script>
+          </section>
+					<section data-markdown>
+						<script type="text/template">
+							The `<meta>` tag provides metadata about the HTML document.
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							The `<title>` tag is the, well, title of the document!
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							And last but not least, the `<body>` tag is where our beautiful html resides
+						</script>
+					</section>
+        </section>
+        <section data-markdown>
+          # Now you...
+
+          Take your codepen and make it into an html document using Atom!
+
+          Use:
+
+          * Don't forget to use the standard html template
+          * Atom has the html template built in, just type HTML and let autocomplete do the rest
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
