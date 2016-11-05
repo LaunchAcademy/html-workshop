@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/launch.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<script type="text/template">
+            ## Standards and W3C Validation
+          </script>
+				</section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The Universe of Browsers
+
+            <img src="/img/browsers.png" height="300" alt="Browser Ecosystem"/>
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Cross Browser Compatibility
+
+            * Different technology opinions
+            * Different user agent stylesheets
+            * Different approaches to guessing when you have invalid markup
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## The best way to prevent browser incompatibilities is...
+
+            To ensure you're HTML is standards compliant!
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## What does it mean to have valid markup?
+
+            * Compliant with the W3C Standard
+            * Accessible for those that are visually impaired
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Understanding Web Standards
+
+            * Read the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+            * Validate your markup using the [web developer toolbar](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm?hl=en-US)
+            * Practice
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Let's Play with the Validator
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Exploring More Inline Elements
+
+            * The `<strong>` element
+            * The `<em>` elements
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Inline Elements with Attributes
+
+            * The `<img>` element
+            * The `<a>` element
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Use HTML Comments for:
+
+            * Documenting your code
+            * Hiding sections temporarily (w/ caveat)
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Now You...
+
+            Modify your HTML web page to include:
+
+            * At least 1 `<a>` tag
+            * At least 1 `<img>` tag
+            * At least 1 `<strong>` tag
+
+            Be sure it validates using the web developer toolbar!
+          </script>
+        </section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
